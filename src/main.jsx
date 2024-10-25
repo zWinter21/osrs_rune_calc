@@ -5,8 +5,8 @@ import Navbar from './Navbar'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <>
     <Navbar/>
     <RuneCalc/>
-  </StrictMode>,
+  </>
 )
