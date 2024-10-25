@@ -1,0 +1,59 @@
+#calc {
+  border-color: #282726;
+  background-image: url(/wall.jpg);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 1);
+  padding: 2rem;
+  color: white;
+}
+
+#rune {
+  object-fit: contain;
+  max-height: 3rem;
+  margin: 10px;
+}
+input,
+.card,
+select{
+  border-color: #282726 !important;
+  background-color: #E7DFC9 !important;
+}
+
+.form-check-input {
+  background-color: #282726 !important;
+  border-color: white !important;
+}
+
+.info-anchor {
+  position: relative;
+  display: inline-block;
+}
+
+@media (max-width: 1024px) {
+  .info-text {
+      display: none; /* Completely hide tooltip on mobile devices */
+  }
+}
+
+.info-text {
+  visibility: hidden;
+  width: 220px;
+  background-color: #1A120B;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  top: 100%;
+  right: 110%; /* Position the tooltip to the left of the wrapper */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+.info-anchor:hover .info-text {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 2s; /* Delays visibility by 2 seconds */
+}
